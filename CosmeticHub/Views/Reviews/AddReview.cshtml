@@ -1,0 +1,30 @@
+﻿@{
+    var productId = ViewBag.ProductId;
+    var userId = ViewBag.UserId;
+    Layout = "_UserLayout";
+
+}
+
+<form method="post" asp-action="SubmitReview" asp-route-productId="@productId" asp-route-userId="@userId" class="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg space-y-6">
+    <h2 class="text-2xl font-semibold text-gray-800 text-center">Submit Your Review</h2>
+
+    <div class="form-group">
+        <label for="rating" class="block text-lg font-medium text-gray-700">Rating</label>
+        <select name="rating" id="rating" class="form-control w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="comment" class="block text-lg font-medium text-gray-700">Comment</label>
+        <textarea name="comment" id="comment" class="form-control w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" rows="6" required placeholder="Write your comment here..."></textarea>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors duration-300">Submit Review</button>
+    </div>
+</form>

@@ -1,0 +1,165 @@
+﻿@{
+    ViewData["Title"] = "Cart";
+    Layout = "_UserLayout";
+}
+
+
+@{
+    ViewData["Title"] = "Cart";
+    Layout = "_UserLayout";
+}
+
+@model List<Product>
+
+
+@if (Model.Count == 0)
+{
+    <p>Your cart is empty.</p>
+}
+else
+{
+    <div class="flex gap-6">
+        <!-- Price Calculator Section -->
+        <div class="w-1/3 bg-gray-100 border border-gray-300 rounded-lg shadow-lg p-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Price Calculator</h3>
+            <table class="w-full text-left" id="priceTable">
+                <thead>
+                    <tr>
+                        <th class="border-b py-2">Product</th>
+                        <th class="border-b py-2">Quantity</th>
+                        <th class="border-b py-2">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in Model)
+                    {
+                        <tr data-product-id="@product.ProductId">
+                            <td class="py-2">@product.ProductName</td>
+                            <td class="py-2">
+                                <div class="flex items-center">
+                                    <button type="button" class="px-2 py-1 bg-gray-300 text-gray-800 rounded" onclick="updateQuantity(@product.ProductId, -1)">-</button>
+                                    <input type="number" id="quantity-@product.ProductId" class="w-12 mx-2 text-center border border-gray-300 rounded" value="1" min="1" readonly />
+                                    <button type="button" class="px-2 py-1 bg-gray-300 text-gray-800 rounded" onclick="updateQuantity(@product.ProductId, 1)">+</button>
+                                </div>
+                            </td>
+                            <td class="py-2 text-green-600">
+                                $<span id="price-@product.ProductId">@string.Format("{0:0.00}", product.Price)</span>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <hr class="my-4" />
+            <div class="text-xl font-bold">
+                Total: $<span id="totalPrice">@string.Format("{0:0.00}", Model.Sum(p => p.Price))</span>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Shipping Address</h3>
+                <div>
+                    <label for="address" class="block text-gray-600">Address</label>
+                    <textarea id="address" name="ShippingAddress" rows="3" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+                </div>
+            </div>
+
+
+            <div class="mt-6">
+                <form method="post" asp-action="Purchase" id="purchaseForm">
+                    <input type="hidden" name="TotalPrice" id="hiddenTotalPrice" />
+                    <input type="hidden" name="CartDetails" id="hiddenCartDetails" />
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                        Purchase
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Product List Section -->
+        <div class="w-2/3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                @foreach (var product in Model)
+                {
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-4">
+                        <img src="@product.ImageUrl" class="w-full h-64 object-cover rounded-lg mb-4" />
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">@product.ProductName</h3>
+                        <p class="text-gray-600 mb-4">@product.Description</p>
+                        <span class="text-lg font-bold text-green-600">$@string.Format("{0:0.00}", product.Price)</span>
+                        <form method="post" asp-action="DeleteFromCart" asp-route-productId="@product.ProductId" class="mt-2">
+                            <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors duration-300">
+                                Remove from Cart
+                            </button>
+                        </form>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+<script>
+    function updateQuantity(productId, change) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        const priceElement = document.getElementById(`price-${productId}`);
+        const totalPriceElement = document.getElementById('totalPrice');
+
+        let quantity = parseInt(quantityInput.value);
+        const pricePerUnit = parseFloat(priceElement.textContent);
+
+        // Update quantity
+        quantity = Math.max(1, quantity + change);
+        quantityInput.value = quantity;
+
+        // Calculate new total for this product
+        const newProductPrice = quantity * pricePerUnit;
+
+        // Update total price
+        const rows = document.querySelectorAll('#priceTable tbody tr');
+        let totalPrice = 0;
+        rows.forEach(row => {
+            const rowProductId = row.getAttribute('data-product-id');
+            const rowQuantity = parseInt(document.getElementById(`quantity-${rowProductId}`).value);
+            const rowPricePerUnit = parseFloat(document.getElementById(`price-${rowProductId}`).textContent);
+            totalPrice += rowQuantity * rowPricePerUnit;
+        });
+
+        // Update total price element
+        totalPriceElement.textContent = totalPrice.toFixed(2);
+    }
+
+
+
+        document.getElementById("purchaseForm").addEventListener("submit", function () {
+        const rows = document.querySelectorAll('#priceTable tbody tr');
+        const cartDetails = [];
+        const shippingAddress = document.getElementById("address").value;
+
+        rows.forEach(row => {
+            const productId = row.getAttribute('data-product-id');
+            const quantity = parseInt(document.getElementById(`quantity-${productId}`).value);
+            const price = parseFloat(document.getElementById(`price-${productId}`).textContent);
+
+            cartDetails.push({ productId, quantity, price });
+        });
+
+        // Set hidden inputs
+        document.getElementById("hiddenCartDetails").value = JSON.stringify(cartDetails);
+        document.getElementById("hiddenTotalPrice").value = document.getElementById("totalPrice").textContent;
+        const hiddenShippingAddress = document.createElement('input');
+        hiddenShippingAddress.type = "hidden";
+        hiddenShippingAddress.name = "ShippingAddress";
+        hiddenShippingAddress.value = shippingAddress;
+        this.appendChild(hiddenShippingAddress);
+    });
+
+
+
+
+</script>
+
+
+
+

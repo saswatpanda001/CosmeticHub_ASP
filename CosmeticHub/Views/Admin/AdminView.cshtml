@@ -1,0 +1,39 @@
+﻿@model CosmeticHub.Models.AdminDashboardViewModel
+
+@{
+    ViewData["Title"] = "AdminView";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, Admin!</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Users</h5>
+                    <h1 class="card-text">@Model.TotalUsers</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Products</h5>
+                    <h1 class="card-text">@Model.TotalProducts</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Orders</h5>
+                    <h1 class="card-text">@Model.TotalOrders</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

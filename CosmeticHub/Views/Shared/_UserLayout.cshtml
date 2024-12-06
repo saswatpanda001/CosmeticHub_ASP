@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <header class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-400 p-4 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="@Url.Action("Index", "Home")" class="text-3xl font-semibold text-white hover:text-gray-200">CosmeticHub</a>
+            <div class="flex space-x-6">
+                <a href="@Url.Action("CustomerView", "Customer")" class="text-white hover:text-indigo-200">Home</a>
+                <a href="@Url.Action("DisplayUserOrders", "Orders")" class="text-white hover:text-indigo-200">OrderHistory</a>
+       
+                <a href="@Url.Action("DisplayReviews", "Reviews")" class="text-white hover:text-indigo-200">Reviews</a>
+                <a href="@Url.Action("Cart", "Customer")" class="text-white hover:text-indigo-200">Cart</a>
+                <a href="@Url.Action("Index", "API")" class="text-white hover:text-indigo-200">API</a>
+                <a href="@Url.Action("AdminLogin", "Accounts")" class="text-white hover:text-indigo-200">Admin</a>
+                <a href="@Url.Action("Logout", "Accounts")" class="text-white hover:text-indigo-200">Logout</a>
+                @*@<a href="@Url.Action("Login", "Accounts")" class="text-white hover:text-indigo-200">Login</a>*@
+
+
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            &copy; 2024 - CosmeticHub -
+            <a href="@Url.Action("Privacy", "Home")" class="text-indigo-300 hover:underline">Privacy</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+

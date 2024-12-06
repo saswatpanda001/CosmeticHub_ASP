@@ -1,0 +1,400 @@
+﻿@{
+    ViewData["Title"] = "HomePage";
+    Layout = null;
+
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+
+</head>
+
+
+
+	<body>
+    <!-- nav bar section -->
+    <nav class="flex flex-wrap items-center justify-between p-3 bg-[#f7d9d9]">
+        <div class="text-xl">   </div>
+        <div class="flex md:hidden">
+            <button id="hamburger">
+                <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
+                <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+            </button>
+        </div>
+        <div class=" toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 md:border-none">
+            <a href="#home" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">
+                Home
+            </a>
+            <a href="#services" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">
+                Services
+            </a>
+            <a href="#aboutus" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">
+                About us
+            </a>
+            <a href="#gallery" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">
+                Gallery
+            </a>
+            <a href="#contactUs" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">
+                Visit Us
+            </a>
+        </div>
+
+        <div class="toggle w-full text-end hidden md:flex md:w-auto px-2 py-2 md:rounded">
+  
+                <div class="flex gap-3 justify-end">
+                      <a asp-area="" asp-controller="Accounts" asp-action="Login">
+                    <div class="flex items-center h-10 w-30 rounded-md bg-[#d79aa3] text-white font-medium p-2">
+                        <!-- Heroicon name: login -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M15.75 9V6.75A2.25 2.25 0 0013.5 4.5H4.5A2.25 2.25 0 002.25 6.75v10.5A2.25 2.25 0 004.5 19.5h9a2.25 2.25 0 002.25-2.25V15M9 15l3-3m0 0l-3-3m3 3H21" />
+                        </svg>  
+                        Login
+                    </div>
+                    </a>
+
+                      <a asp-area="" asp-controller="Accounts" asp-action="Signup">
+                    <div class="flex items-center h-10 w-30 rounded-md bg-[#d79aa3] text-white font-medium p-2">
+                        <!-- Heroicon name: user-add -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M18 9m-6 0a6 6 0 1112 0 6 6 0 01-12 0zM9 12H4.5m0 0v-2.25M4.5 9V4.5m9 12.75c0-2.7-5.4-3.75-9-3.75-3.6 0-9 1.05-9 3.75m18 0H15" />
+                        </svg>
+                        Signup
+                    </div>
+                    </a>
+
+                <div class="flex items-center h-10 w-30 rounded-md bg-[#d79aa3] text-white font-medium p-2">
+                        <!-- Heroicon name: phone -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>
+                        Call now
+                    </div>
+                </div>
+   
+        </div>
+
+    </nav>
+    <!-- hero seciton -->
+    <div class="relative w-full h-[320px]" id="home">
+        <div class="absolute inset-0 opacity-70">
+            <img src="https://vivecosmetic.com/wp-content/uploads/2020/08/Top-10-Cosmetic-Companies-in-India.jpg" alt="Background Image" class="object-cover object-center w-full h-full" />
+
+        </div>
+        <div class="absolute inset-9 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-4 md:mb-0">
+                <h1 class="text-grey-700 font-medium text-4xl md:text-5xl leading-tight mb-2">Cosmetic Hub</h1>
+                <p class="font-regular text-xl mb-8 mt-4"> A unique name that conveys beauty and elegance.</p>
+                <a href="#contactUs"
+                   class="px-6 py-3 bg-[#c8a876] text-white font-medium rounded-full hover:bg-[#c09858]  transition duration-200">
+                    Contact
+                    Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- our services section -->
+    <section class="py-10" id="services">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="
+https://marscosmetics.in/cdn/shop/files/WEBSITEcopy.jpg2_1_8b29a084-be62-49dc-9569-3273a5606b2f.jpg?v=1714561945&width=2000" alt="wheat flour grinding"
+                         class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Foundation</h3>
+                        <p class="text-gray-700 text-base">
+                            A must-have for flawless skin, foundation evens out your complexion, hides imperfections, and creates the perfect canvas for your makeup. Available in liquid, cream, or powder forms, there's a perfect match for every skin type and tone.
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.mamaearth.in/catalog/product/c/r/cranberry_crush_swatch_copy.jpg?format=auto&height=600" alt="Coffee"
+                         class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Lipstick</h3>
+                        <p class="text-gray-700 text-base">
+                            From bold reds to subtle nudes, lipsticks add a pop of color and complete any look. With options like matte, glossy, or satin finishes, lipsticks enhance your natural beauty and make a statement.
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000000494273773/trgySzkTkT-000000000494273773_1.png" alt="Coffee"
+                         class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Blush</h3>
+                        <p class="text-gray-700 text-base">
+                            Give your cheeks a healthy, radiant glow with blush. Available in powders, creams, or sticks, blush adds a natural flush and dimension to your face.
+
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://pyxis.nymag.com/v1/imgs/3ad/a86/30e83fc6c4bfff34ecc6d48a2997e0a08b-lady-gaga-eyeliner.rsquare.w600.jpg" alt="Coffee"
+                         class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Eyeliner</h3>
+                        <p class="text-gray-700 text-base">
+                            Define your eyes with precision using eyeliner. From classic black to vibrant colors, eyeliners enhance your eye shape and add drama to any look, whether subtle or bold.
+                        </p>
+                    </div>
+                </div>
+                <!-- special card -->
+                <div class="bg-white rounded-lg bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg overflow-hidden min-h-full">
+                    <div class="text-center text-white font-medium">Special product</div>
+                    <img src="https://barvaskintherapie.com/cdn/shop/files/16_65cf4034-2622-46c6-af74-7d5ca7b2645e_1200x1200.png?v=1711945220" alt="Coffee"
+                         class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6 bg-white text-center rounded-b-lg md:min-h-full">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Face Moisturizer</h3>
+                        <p class="text-gray-700 text-base">
+                            <span class="font-medium underline">Our speciality is</span>
+                            Healthy skin is beautiful skin. A good face moisturizer keeps your skin hydrated, soft, and ready to take on the day. Many options also include SPF for sun protection.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://marscosmetics.in/cdn/shop/products/fabulash-mascara-607.jpg?v=1638452787" alt="papad"
+                         class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Mascarad</h3>
+                        <p class="text-gray-700 text-base">
+                            The ultimate eye-opener! Mascara adds length, volume, and definition to your lashes, making your eyes look more awake and captivating.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us -->
+    <section class="bg-gray-100" id="aboutus">
+        <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                <div class="max-w-lg">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">About Us</h2>
+                    <p class="mt-4 text-gray-600 text-lg">
+
+                       
+                        At <b>CosmeticHub</b>, we are passionate about helping you feel beautiful, confident, and uniquely yourself. Our journey began with a vision to make high-quality cosmetic products accessible to everyone, no matter their style or preference.
+
+                        We believe that beauty is an art, a form of self-expression that deserves to be celebrated. That’s why we carefully curate a wide range of products, from timeless staples to innovative new launches, ensuring that you always find something perfect for your needs.
+
+                        What sets us apart is our commitment to quality, innovation, and customer satisfaction. We work with trusted brands and experts to bring you products that are safe, effective, and cruelty-free. Our team is here to inspire, guide, and empower you on your beauty journey, whether you're a seasoned pro or exploring for the first time.
+                    </p>
+                </div>
+                <div class="mt-12 md:mt-0">
+                    <img src="https://www.applechem.com/_img/_media/markets/cosmetic-products-supplier/various-cosmetics-and-brushes-on-a-multi-colored-background.jpg/600x600?" alt="About Us Image" class="object-cover rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- why us  -->
+    <section class="text-gray-700 body-font mt-10">
+        <div class="flex justify-center text-3xl font-bold text-gray-800 text-center">
+            Why Us?
+        </div>
+        <div class="container px-5 py-12 mx-auto">
+            <div class="flex flex-wrap text-center justify-center">
+                <div class="p-4 md:w-1/4 sm:w-1/2">
+                    <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+                        <div class="flex justify-center">
+                            <img src="https://image3.jdomni.in/banner/13062021/58/97/7C/E53960D1295621EFCB5B13F335_1623567851299.png?output-format=webp" class="w-32 mb-3">
+                        </div>
+                        <h2 class="title-font font-regular text-2xl text-gray-900">Latest Formulations</h2>
+                    </div>
+                </div>
+
+                <div class="p-4 md:w-1/4 sm:w-1/2">
+                    <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+                        <div class="flex justify-center">
+                            <img src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp" class="w-32 mb-3">
+                        </div>
+                        <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
+                    </div>
+                </div>
+
+                <div class="p-4 md:w-1/4 sm:w-1/2">
+                    <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+                        <div class="flex justify-center">
+                            <img src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp" class="w-32 mb-3">
+                        </div>
+                        <h2 class="title-font font-regular text-2xl text-gray-900">Easy to Use</h2>
+                    </div>
+                </div>
+
+                <div class="p-4 md:w-1/4 sm:w-1/2">
+                    <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+                        <div class="flex justify-center">
+                            <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp" class="w-32 mb-3">
+                        </div>
+                        <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="text-gray-700 body-font" id="gallery">
+        <div class="flex justify-center text-3xl font-bold text-gray-800 text-center py-10">
+            Gallery
+        </div>
+
+        <div class="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+
+            <div class="group relative">
+                <img src="https://img.freepik.com/premium-photo/photo-female-makeup-artist-doing-makeup-young-girl-face_763111-40449.jpg" alt="Image 1"
+                     class="aspect-[2/3] h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105" />
+            </div>
+
+            <div class="group relative">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/011/341/718/small_2x/cute-young-girl-doing-makeup-photo.jpg" alt="Image 1"
+                     class="aspect-[2/3] h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105" />
+            </div>
+
+            <div class="group relative">
+                <img src="https://objectstore.e2enetworks.net/hansmigration/feeds/2021/02/04/1028966-beauty.jpg" alt="Image 1"
+                     class="aspect-[2/3] h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105" />
+            </div>
+            <div class="group relative">
+                <img src="https://png.pngtree.com/thumb_back/fw800/background/20240508/pngtree-a-girl-doing-makeup-image_15727845.jpg" alt="Image 1"
+                     class="aspect-[2/3] h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105" />
+            </div>
+
+
+
+            <!-- Repeat this div for each image -->
+        </div>
+
+    </section>
+
+    <!-- Visit us section -->
+    <section class="bg-gray-100">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-20 lg:px-8">
+            <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900" id="contactUs">Visit Our Location</h2>
+                <p class="mt-3 text-lg text-gray-500">Let us serve you the best</p>
+            </div>
+            <div class="mt-8 lg:mt-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="max-w-full mx-auto rounded-lg overflow-hidden">
+                            <div class="border-t border-gray-200 px-6 py-4">
+                                <h3 class="text-lg font-bold text-gray-900">Contact</h3>
+                                <p class="mt-1 font-bold text-gray-600">
+                                    <a href="tel:+123">
+                                        Phone: +91
+                                        123456789
+                                    </a>
+                                </p>
+                                <a class="flex m-1" href="tel:+919823331842">
+                                    <div class="flex-shrink-0">
+                                        <div class="flex items-center justify-between h-10 w-30 rounded-md bg-indigo-500 text-white p-2">
+                                            <!-- Heroicon name: phone -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                            </svg>
+                                            Call now
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="px-6 py-4">
+                                <h3 class="text-lg font-medium text-gray-900">Our Address</h3>
+                                <p class="mt-1 text-gray-600"> Niagara college , Toronto, mirvish campus</p>
+                            </div>
+                            <div class="border-t border-gray-200 px-6 py-4">
+                                <h3 class="text-lg font-medium text-gray-900">Hours</h3>
+                                <p class="mt-1 text-gray-600">Monday - Sunday : 2pm - 9pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden order-none sm:order-first">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1443.118859692359!2d-79.4126446589414!3d43.664025623956455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35e6cf8a7dfb%3A0xd32ac461151e9041!2sNiagara%20College%20%E2%80%93%20Toronto%20Mirvish%20Campus!5e0!3m2!1sen!2sin!4v1733072749354!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section>
+        <footer class="bg-gray-200 text-white py-4 px-3">
+            <div class="container mx-auto flex flex-wrap items-center justify-between">
+                <div class="w-full md:w-1/2 md:text-center md:mb-4 mb-8">
+                    <p class="text-xs text-gray-400 md:text-sm">Copyright 2024 &copy; All Rights Reserved</p>
+                </div>
+                <div class="w-full md:w-1/2 md:text-center md:mb-0 mb-8">
+                    <ul class="list-reset flex justify-center flex-wrap text-xs md:text-sm gap-3">
+                        <li><a href="#contactUs" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li class="mx-4"><a href="/privacy" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        document.getElementById("hamburger").onclick = function toggleMenu() {
+            const navToggle = document.getElementsByClassName("toggle");
+            for (let i = 0; i < navToggle.length; i++) {
+              navToggle.item(i).classList.toggle("hidden");
+            }
+          };
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+	</html>

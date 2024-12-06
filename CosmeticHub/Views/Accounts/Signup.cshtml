@@ -1,0 +1,156 @@
+﻿@model CosmeticHub.Models.User
+
+@{
+    ViewData["Title"] = "Signup";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f9c1d9, #f8e1f4); /* Soft gradient background */
+            font-family: 'Georgia', serif;
+        }
+
+        .form-container {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .form-header {
+            font-family: 'Cursive', sans-serif;
+            color: #d88fb1; /* Soft pink for the header */
+            font-size: 2rem;
+        }
+
+        .input-field {
+            border-radius: 10px;
+            border: 1px solid #e2c1d3;
+        }
+
+        .btn {
+            background-color: #d88fb1;
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #f7a7c3;
+                transform: translateY(-3px);
+            }
+
+        .link {
+            color: #d88fb1;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+            .link:hover {
+                text-decoration: underline;
+            }
+
+        .error-message {
+            color: #f44336;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="py-12 flex justify-center items-center h-100">
+
+    <div class="form-container p-8 w-full max-w-lg">
+        <h2 class="form-header text-center mb-6">Signup</h2>
+
+        <form method="post" action="@Url.Action("Signup", "Accounts")" class="space-y-6" id="signupForm">
+
+            <div class="mb-4">
+                <label for="Username" class="block text-lg text-gray-700">Username</label>
+                <input type="text" id="Username" name="Username" class="input-field mt-2 p-3 w-full" required />
+            </div>
+
+            <div class="mb-4">
+                <label for="Password" class="block text-lg text-gray-700">Password</label>
+                <input type="password" id="Password" name="Password" class="input-field mt-2 p-3 w-full" required />
+            </div>
+
+            <div class="mb-4">
+                <label for="ConfirmPassword" class="block text-lg text-gray-700">Confirm Password</label>
+                <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="input-field mt-2 p-3 w-full" required />
+                <p id="passwordError" class="error-message hidden mt-2">Passwords do not match.</p>
+            </div>
+
+            <div class="mb-4">
+                <label for="Email" class="block text-lg text-gray-700">Email</label>
+                <input type="email" id="Email" name="Email" class="input-field mt-2 p-3 w-full" required />
+            </div>
+
+            <div class="mb-4">
+                <label for="PhoneNumber" class="block text-lg text-gray-700">Phone Number</label>
+                <input type="text" id="PhoneNumber" name="PhoneNumber" class="input-field mt-2 p-3 w-full" />
+            </div>
+
+            <div class="mb-4">
+                <label for="FirstName" class="block text-lg text-gray-700">First Name</label>
+                <input type="text" id="FirstName" name="FirstName" class="input-field mt-2 p-3 w-full" />
+            </div>
+
+            <div class="mb-4">
+                <label for="LastName" class="block text-lg text-gray-700">Last Name</label>
+                <input type="text" id="LastName" name="LastName" class="input-field mt-2 p-3 w-full" />
+            </div>
+
+            <div class="mb-6">
+                <label for="Address" class="block text-lg text-gray-700">Address</label>
+                <input type="text" id="Address" name="Address" class="input-field mt-2 p-3 w-full" />
+            </div>
+
+            <button type="submit" class="btn w-full py-3">Signup</button>
+
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="error-message mt-3 text-center">
+                    @ViewBag.ErrorMessage
+                </div>
+            }
+
+            <p class="mt-4 text-center text-gray-600">
+                Already have an account? <a href="@Url.Action("Login", "Accounts")" class="link">Login here</a>.
+            </p>
+
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function (e) {
+            const password = document.getElementById("Password").value;
+            const confirmPassword = document.getElementById("ConfirmPassword").value;
+            const errorElement = document.getElementById("passwordError");
+
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                errorElement.classList.remove("hidden");
+            } else {
+                errorElement.classList.add("hidden");
+            }
+        });
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+ 
+
+</body>
+
+</html>

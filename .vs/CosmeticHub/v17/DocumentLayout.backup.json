@@ -1,0 +1,505 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ASP\\CosmeticHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\admin\\adminview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\admin\\adminview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\accounts\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\accounts\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\models\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\models\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\controllers\\exportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\controllers\\exportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\accounts\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\accounts\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\accounts\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\accounts\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\users\\admins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\users\\admins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\users\\bulkdeletionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\users\\bulkdeletionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\customer\\customerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\customer\\customerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|c:\\asp\\cosmetichub\\cosmetichub\\views\\accounts\\passwordreset.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32895785-1359-4A81-9F21-6287163A3CED}|CosmeticHub\\CosmeticHub.csproj|solutionrelative:cosmetichub\\views\\accounts\\passwordreset.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|c:\\asp\\cosmetichub\\cosmetichubtesting\\unittests\\usercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|solutionrelative:cosmetichubtesting\\unittests\\usercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|c:\\asp\\cosmetichub\\cosmetichubtesting\\unittests\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|solutionrelative:cosmetichubtesting\\unittests\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|c:\\asp\\cosmetichub\\cosmetichubtesting\\interfacetest\\orderscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|solutionrelative:cosmetichubtesting\\interfacetest\\orderscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|c:\\asp\\cosmetichub\\cosmetichubtesting\\interfacetest\\reviewscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|solutionrelative:cosmetichubtesting\\interfacetest\\reviewscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|c:\\asp\\cosmetichub\\cosmetichubtesting\\interfacetest\\ordertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F9AE018-13B7-4DF4-9FBE-F9844E1E9D7E}|CosmeticHubTesting\\CosmeticHubTesting.csproj|solutionrelative:cosmetichubtesting\\interfacetest\\ordertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Models\\Order.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\Order.cs",
+              "RelativeToolTip": "CosmeticHub\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:57:56.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_UserLayout.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Shared\\_UserLayout.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Shared\\_UserLayout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T02:37:32.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminView.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Admin\\AdminView.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Admin\\AdminView.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Admin\\AdminView.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Admin\\AdminView.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T02:40:04.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "CosmeticHub\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAAwPwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T12:01:03.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "CosmeticHub\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAmwLUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:41:30.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "CosmeticHub\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAAAIQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T12:12:07.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "CosmeticHub\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAAALEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T12:12:16.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminLogin.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Accounts\\AdminLogin.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Accounts\\AdminLogin.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Accounts\\AdminLogin.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Accounts\\AdminLogin.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-06T11:40:40.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "CosmeticHub\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T12:22:52.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminDashboardViewModel.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\AdminDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Models\\AdminDashboardViewModel.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\AdminDashboardViewModel.cs",
+              "RelativeToolTip": "CosmeticHub\\Models\\AdminDashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T12:27:32.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExportController.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\ExportController.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Controllers\\ExportController.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\ExportController.cs",
+              "RelativeToolTip": "CosmeticHub\\Controllers\\ExportController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T12:15:38.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "CosmeticHub\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwHgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:41:46.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAUwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T02:36:16.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Models\\Product.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\Product.cs",
+              "RelativeToolTip": "CosmeticHub\\Models\\Product.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:57:50.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Admins.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Users\\Admins.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Users\\Admins.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Users\\Admins.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Users\\Admins.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-06T12:04:42.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Accounts\\Login.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Accounts\\Login.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Accounts\\Login.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Accounts\\Login.cshtml",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAQwGAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T02:39:19.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Signup.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Accounts\\Signup.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Accounts\\Signup.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Accounts\\Signup.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Accounts\\Signup.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAH8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T02:39:45.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\User.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Models\\User.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\User.cs",
+              "RelativeToolTip": "CosmeticHub\\Models\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:41:20.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BulkDeletionPage.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Users\\BulkDeletionPage.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Users\\BulkDeletionPage.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Users\\BulkDeletionPage.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Users\\BulkDeletionPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-06T12:04:46.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Program.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Program.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Program.cs",
+              "RelativeToolTip": "CosmeticHub\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T16:44:01.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "CosmeticHub\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "CosmeticHub\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAwK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T16:44:17.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGUBAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T02:40:12.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PasswordReset.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Accounts\\PasswordReset.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Accounts\\PasswordReset.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Accounts\\PasswordReset.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Accounts\\PasswordReset.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T02:39:36.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerView.cshtml",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Customer\\CustomerView.cshtml",
+              "RelativeDocumentMoniker": "CosmeticHub\\Views\\Customer\\CustomerView.cshtml",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHub\\Views\\Customer\\CustomerView.cshtml",
+              "RelativeToolTip": "CosmeticHub\\Views\\Customer\\CustomerView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T02:43:36.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ReviewsControllerTests.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\InterfaceTest\\ReviewsControllerTests.cs",
+              "RelativeDocumentMoniker": "CosmeticHubTesting\\InterfaceTest\\ReviewsControllerTests.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\InterfaceTest\\ReviewsControllerTests.cs",
+              "RelativeToolTip": "CosmeticHubTesting\\InterfaceTest\\ReviewsControllerTests.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T02:24:05.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrderTests.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\InterfaceTest\\OrderTests.cs",
+              "RelativeDocumentMoniker": "CosmeticHubTesting\\InterfaceTest\\OrderTests.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\InterfaceTest\\OrderTests.cs",
+              "RelativeToolTip": "CosmeticHubTesting\\InterfaceTest\\OrderTests.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T02:22:55.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "OrdersControllerTests.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\InterfaceTest\\OrdersControllerTests.cs",
+              "RelativeDocumentMoniker": "CosmeticHubTesting\\InterfaceTest\\OrdersControllerTests.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\InterfaceTest\\OrdersControllerTests.cs",
+              "RelativeToolTip": "CosmeticHubTesting\\InterfaceTest\\OrdersControllerTests.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T02:20:36.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserControllerTests.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\UnitTests\\UserControllerTests.cs",
+              "RelativeDocumentMoniker": "CosmeticHubTesting\\UnitTests\\UserControllerTests.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\UnitTests\\UserControllerTests.cs",
+              "RelativeToolTip": "CosmeticHubTesting\\UnitTests\\UserControllerTests.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAmwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T02:14:29.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\UnitTests\\ProductsController.cs",
+              "RelativeDocumentMoniker": "CosmeticHubTesting\\UnitTests\\ProductsController.cs",
+              "ToolTip": "C:\\ASP\\CosmeticHub\\CosmeticHubTesting\\UnitTests\\ProductsController.cs",
+              "RelativeToolTip": "CosmeticHubTesting\\UnitTests\\ProductsController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T02:13:45.47Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<CosmeticHub.Models.User>
+
+@{
+    ViewData["Title"] = "BulkDeletionPage";
+    Layout = "_AdminLayout";
+}
+
+<h1 class="text-3xl font-bold text-center mb-6">Manage Users</h1>
+
+<form method="post" asp-action="BulkDeleteUsers" id="userForm">
+    <table class="min-w-full table-auto bg-white shadow-md rounded-lg">
+        <thead>
+            <tr>
+                <th class="px-4 py-2 text-left">
+                    <input type="checkbox" id="selectAll" /> Select All
+                </th>
+                <th class="px-4 py-2 text-left">Username</th>
+                <th class="px-4 py-2 text-left">First Name</th>
+                <th class="px-4 py-2 text-left">Last Name</th>
+                <th class="px-4 py-2 text-left">Email</th>
+                <th class="px-4 py-2 text-left">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr class="border-b">
+                    <td class="px-4 py-2">
+                        <input type="checkbox" name="userIds" value="@user.UserId" class="userCheckbox" />
+                    </td>
+                    <td class="px-4 py-2">@user.Username</td>
+                    <td class="px-4 py-2">@user.FirstName</td>
+                    <td class="px-4 py-2">@user.LastName</td>
+                    <td class="px-4 py-2">@user.Email</td>
+                    <td class="px-4 py-2">@user.PhoneNumber</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="submit" class="mt-4 px-4 py-2 bg-red-600 text-black rounded">Delete Selected Users</button>
+</form>
+
+<script>
+    // Select or unselect all checkboxes
+    document.getElementById('selectAll').addEventListener('change', function () {
+        const checkboxes = document.querySelectorAll('.userCheckbox');
+        checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+    });
+</script>

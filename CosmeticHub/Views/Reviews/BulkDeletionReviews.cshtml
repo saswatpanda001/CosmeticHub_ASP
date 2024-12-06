@@ -1,0 +1,50 @@
+﻿@model IEnumerable<CosmeticHub.Models.Review>
+
+@{
+    ViewData["Title"] = "ManageReviews";
+    Layout = "_AdminLayout";
+}
+
+<h1 class="text-3xl font-bold text-center mb-6">Manage Reviews</h1>
+
+<form method="post" asp-action="BulkDeleteReviews" id="reviewForm">
+    <table class="min-w-full table-auto bg-white shadow-md rounded-lg">
+        <thead>
+            <tr>
+                <th class="px-4 py-2 text-left">
+                    <input type="checkbox" id="selectAll" /> Select All
+                </th>
+                <th class="px-4 py-2 text-left">User ID</th>
+                <th class="px-4 py-2 text-left">Product ID</th>
+                <th class="px-4 py-2 text-left">Rating</th>
+                <th class="px-4 py-2 text-left">Comment</th>
+                <th class="px-4 py-2 text-left">Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var review in Model)
+            {
+                <tr class="border-b">
+                    <td class="px-4 py-2">
+                        <input type="checkbox" name="reviewIds" value="@review.ReviewId" class="reviewCheckbox" />
+                    </td>
+                    <td class="px-4 py-2">@review.UserId</td>
+                    <td class="px-4 py-2">@review.ProductId</td>
+                    <td class="px-4 py-2">@review.Rating</td>
+                    <td class="px-4 py-2">@review.Comment</td>
+                    <td class="px-4 py-2">@review.CreatedAt?.ToString("MM/dd/yyyy")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="submit" class="mt-4 px-4 py-2 bg-red-600 text-white rounded">Delete Selected Reviews</button>
+</form>
+
+<script>
+    // Select or unselect all checkboxes
+    document.getElementById('selectAll').addEventListener('change', function () {
+        const checkboxes = document.querySelectorAll('.reviewCheckbox');
+        checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+    });
+</script>
